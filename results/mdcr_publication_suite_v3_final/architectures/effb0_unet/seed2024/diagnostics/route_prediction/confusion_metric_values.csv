@@ -1,0 +1,6 @@
+,no_correction,recover_fn,remove_fp,boundary_align,tail_cleanup
+no_correction,150,30,27,10,11
+recover_fn,16,32,32,16,1
+remove_fp,43,36,60,30,2
+boundary_align,15,9,33,26,1
+tail_cleanup,1,4,2,2,1

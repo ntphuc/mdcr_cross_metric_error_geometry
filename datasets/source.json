@@ -1,0 +1,9 @@
+{
+  "name": "BRISC2025",
+  "provider": "google_drive",
+  "url": "",
+  "archive_name": "data_preprocessed.zip",
+  "note": "Download URL intentionally left empty in the public release. Obtain BRISC2025 from its official source (see README) and place it under datasets/brisc2025, or set url to a Google Drive archive you are allowed to share.",
+  "expected_train_samples": 3933,
+  "expected_test_samples": 860
+}

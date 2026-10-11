@@ -1,0 +1,84 @@
+{
+  "best_epoch": 23,
+  "best_safe_objective": 0.24001526604692258,
+  "best_validation": {
+    "accuracy": 0.4152542372881356,
+    "balanced_accuracy": 0.32650497431060604,
+    "macro_f1": 0.27945188576523244,
+    "per_route_precision": {
+      "no_correction": 0.48441926345609065,
+      "recover_fn": 0.2926829268292683,
+      "remove_fp": 1.0,
+      "boundary_align": 0.3879310344827586,
+      "tail_cleanup": 0.05555555555555555
+    },
+    "per_route_recall": {
+      "no_correction": 0.8028169014084507,
+      "recover_fn": 0.24489795918367346,
+      "remove_fp": 0.018633540372670808,
+      "boundary_align": 0.4411764705882353,
+      "tail_cleanup": 0.125
+    },
+    "per_route_f1": {
+      "no_correction": 0.6042402826855123,
+      "recover_fn": 0.26666666666666666,
+      "remove_fp": 0.036585365853658534,
+      "boundary_align": 0.41284403669724773,
+      "tail_cleanup": 0.07692307692307693
+    },
+    "per_route_support": {
+      "no_correction": 213,
+      "recover_fn": 98,
+      "remove_fp": 161,
+      "boundary_align": 102,
+      "tail_cleanup": 16
+    },
+    "confusion": [
+      [
+        171,
+        13,
+        0,
+        11,
+        18
+      ],
+      [
+        57,
+        24,
+        0,
+        12,
+        5
+      ],
+      [
+        79,
+        25,
+        3,
+        44,
+        10
+      ],
+      [
+        42,
+        14,
+        0,
+        45,
+        1
+      ],
+      [
+        4,
+        6,
+        0,
+        4,
+        2
+      ]
+    ]
+  },
+  "correction_margin": -0.15,
+  "train_counts": {
+    "remove_fp": 853,
+    "boundary_align": 675,
+    "recover_fn": 477,
+    "no_correction": 1310,
+    "tail_cleanup": 28
+  },
+  "route_column": "oracle_route",
+  "router_schema": "hierarchical_v3"
+}

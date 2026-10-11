@@ -1,0 +1,17 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed42/baseline/best.pt",
+  "split": "test",
+  "n_cases": 860,
+  "threshold": 0.5,
+  "bf1_tolerance_px": 2,
+  "dice_mean": 0.8744741354833063,
+  "dice_std": 0.17196148082877885,
+  "iou_mean": 0.8065228391637144,
+  "precision_mean": 0.8820007065090311,
+  "recall_mean": 0.895279106092153,
+  "specificity_mean": 0.9983169829593243,
+  "bf1_mean": 0.8545660681038261,
+  "hd95_mean_finite": 7.209519562303854,
+  "assd_mean_finite": 2.391265106253211,
+  "missed_lesion_cases": 2
+}

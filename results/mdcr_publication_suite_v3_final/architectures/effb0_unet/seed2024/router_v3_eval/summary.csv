@@ -1,0 +1,3 @@
+label_column,accuracy,balanced_accuracy,macro_f1
+oracle_route,0.4,0.27169263364597057,0.1903938327467739
+route_metric_discordance_plus_fpfn,0.39152542372881355,0.26193595423144955,0.18093320663870055

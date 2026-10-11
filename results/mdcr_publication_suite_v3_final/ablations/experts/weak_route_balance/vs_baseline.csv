@@ -1,0 +1,6 @@
+comparison,metric,direction,n,improvement,ci95_low,ci95_high,wilcoxon_p,cohens_dz_favorable,wins,losses
+weak_route_balance vs baseline,dice,higher,590,0.0,0.0,0.0,1.0,0.0,0,0
+weak_route_balance vs baseline,iou,higher,590,0.0,0.0,0.0,1.0,0.0,0,0
+weak_route_balance vs baseline,bf1,higher,590,0.0,0.0,0.0,1.0,0.0,0,0
+weak_route_balance vs baseline,hd95,lower,590,0.0,0.0,0.0,1.0,0.0,0,0
+weak_route_balance vs baseline,assd,lower,590,0.0,0.0,0.0,1.0,0.0,0,0

@@ -1,0 +1,18 @@
+{
+  "train_csv": "outputs/mdcr_publication_suite_v3_final/architectures/resnet18_unet/seed42/diagnostics/natural_train_raw.csv",
+  "test_csv": "outputs/mdcr_publication_suite_v3_final/architectures/resnet18_unet/seed42/diagnostics/natural_val_raw.csv",
+  "label": "oracle_route",
+  "model": "forest",
+  "seed": 4242,
+  "feature_sets": [
+    "dice_only",
+    "fpfn",
+    "uncertainty",
+    "scalar_quality",
+    "metric_values",
+    "metric_discordance",
+    "metric_discordance_plus_fpfn",
+    "all_combined"
+  ],
+  "interpretation": "Higher macro-F1 means the signal better predicts which correction family the oracle says is useful, including no correction."
+}

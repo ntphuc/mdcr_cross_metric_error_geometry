@@ -1,0 +1,14 @@
+--- a/src/mdcr_v3_model.py	2026-10-11 00:06:54.485207081 +0000
++++ b/src/mdcr_v3_model.py	2026-10-11 00:06:54.506781804 +0000
+@@ -187,9 +187,9 @@
+             return self.base(image)
+ 
+     def _hard_route_ids(self, route_logits: torch.Tensor) -> torch.Tensor:
++        # Apply the validation-calibrated margin for any sign, matching
++        # predict_ids() in train_router_v3.py (margin 0 = argmax up to exact ties).
+         p = torch.softmax(route_logits.float(), dim=1)
+-        if self.correction_margin <= 0.0:
+-            return p.argmax(dim=1)
+         no = p[:, 0]
+         cp, ci = p[:, 1:].max(dim=1)
+         return torch.where((cp - no) >= self.correction_margin, ci + 1, torch.zeros_like(ci))

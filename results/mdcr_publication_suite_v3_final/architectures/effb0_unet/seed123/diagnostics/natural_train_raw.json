@@ -1,0 +1,17 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed123/baseline/best.pt",
+  "split": "train",
+  "n_cases": 3343,
+  "architecture": "effb0_unet",
+  "mc_samples": 1,
+  "min_oracle_gain": 0.002,
+  "route_counts": {
+    "no_correction": 1333,
+    "remove_fp": 883,
+    "boundary_align": 642,
+    "recover_fn": 423,
+    "tail_cleanup": 62
+  },
+  "mean_oracle_gain": 0.02493343426634759,
+  "role": "Ground truth is used only for diagnostic analysis and training-route labels, never at deployment."
+}

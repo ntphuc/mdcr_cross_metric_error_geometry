@@ -1,0 +1,7 @@
+{
+  "split": "train",
+  "n_rows": 1200,
+  "n_cases": 600,
+  "max_fp_count_mismatch": 0.0,
+  "purpose": "Hold FP/FN volume constant while changing spatial geometry, directly testing whether FP/FN amount alone is insufficient."
+}

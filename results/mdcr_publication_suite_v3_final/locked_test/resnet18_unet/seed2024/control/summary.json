@@ -1,0 +1,17 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/resnet18_unet/seed2024/control/best_dice.pt",
+  "split": "test",
+  "n_cases": 860,
+  "threshold": 0.5,
+  "bf1_tolerance_px": 2,
+  "dice_mean": 0.8721461267788162,
+  "dice_std": 0.1778590381891782,
+  "iou_mean": 0.804950268953125,
+  "precision_mean": 0.8761804795811374,
+  "recall_mean": 0.8949723821754351,
+  "specificity_mean": 0.9982342787250584,
+  "bf1_mean": 0.8552312979982287,
+  "hd95_mean_finite": 7.523944232885608,
+  "assd_mean_finite": 2.492619438023263,
+  "missed_lesion_cases": 0
+}

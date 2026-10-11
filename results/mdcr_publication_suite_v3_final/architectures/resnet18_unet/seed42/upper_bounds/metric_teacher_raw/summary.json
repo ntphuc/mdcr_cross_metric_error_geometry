@@ -1,0 +1,24 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/resnet18_unet/seed42/mdcr_v3/best_oracle_utility.pt",
+  "split": "val",
+  "n_cases": 590,
+  "architecture": "resnet18_unet",
+  "routing_mode": "forced",
+  "force_route_column": "route_metric_discordance_plus_fpfn",
+  "dice_mean": 0.8759901577116711,
+  "iou_mean": 0.8045074544838672,
+  "bf1_mean": 0.8615233717243033,
+  "hd95_mean_finite": 7.707390704227971,
+  "assd_mean_finite": 1.9977546330996172,
+  "missed_lesion_cases": 1,
+  "route_counts": {
+    "no_correction": 218,
+    "remove_fp": 157,
+    "recover_fn": 114,
+    "boundary_align": 91,
+    "tail_cleanup": 10
+  },
+  "mean_route_confidence": 1.0,
+  "no_correction_identity_max_abs_logit_diff": 0.0,
+  "note": "Forced oracle routing is diagnostic only; official test always uses learned routing."
+}

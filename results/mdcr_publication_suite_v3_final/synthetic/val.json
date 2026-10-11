@@ -1,0 +1,13 @@
+{
+  "split": "val",
+  "n_source_cases": 300,
+  "n_rows": 3000,
+  "classes": {
+    "recover_fn": 900,
+    "remove_fp": 600,
+    "boundary_align": 600,
+    "tail_cleanup": 600,
+    "no_correction": 300
+  },
+  "purpose": "controlled error-geometry benchmark; no model predictions are used"
+}

@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "finished_at": "2026-10-03 03:50:43",
+  "records": [
+    {
+      "arch": "effb0_unet",
+      "seed": 42
+    },
+    {
+      "arch": "effb0_unet",
+      "seed": 123
+    },
+    {
+      "arch": "effb0_unet",
+      "seed": 2024
+    },
+    {
+      "arch": "effb0_unet",
+      "seed": 2026
+    },
+    {
+      "arch": "effb0_unet",
+      "seed": 3407
+    },
+    {
+      "arch": "resnet18_unet",
+      "seed": 42
+    },
+    {
+      "arch": "resnet18_unet",
+      "seed": 123
+    },
+    {
+      "arch": "resnet18_unet",
+      "seed": 2024
+    }
+  ]
+}

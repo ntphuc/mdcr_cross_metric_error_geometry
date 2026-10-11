@@ -1,0 +1,19 @@
+{
+  "decision": "ROUTER_BOTTLENECK",
+  "utilities": {
+    "baseline": 1.0531395400477532,
+    "control": 1.0604955221970882,
+    "learned": 1.0531395400477532,
+    "oracle_raw": 1.0617214538999165
+  },
+  "oracle_raw_vs_control": {
+    "dice_gain": 0.00030306118304701535,
+    "hd95_reduction_px": -0.019751773929503003,
+    "utility_gain": 0.0012259317028282535
+  },
+  "oracle_raw_vs_learned": {
+    "dice_gap": 0.005180690295103263,
+    "utility_gap": 0.008581913852163225
+  },
+  "interpretation": "Oracle raw checkpoint is selected only among trained expert epochs (epoch>=1), before safety fallback. It is a diagnostic upper bound, never an official-test method."
+}

@@ -1,0 +1,22 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/ablations/experts/no_explicit_target/deployment.pt",
+  "split": "val",
+  "n_cases": 590,
+  "architecture": "effb0_unet",
+  "routing_mode": "learned",
+  "force_route_column": null,
+  "dice_mean": 0.8796110557272481,
+  "iou_mean": 0.8078087826984319,
+  "bf1_mean": 0.8543563847161356,
+  "hd95_mean_finite": 6.950973540570567,
+  "assd_mean_finite": 1.8850085861019672,
+  "missed_lesion_cases": 0,
+  "route_counts": {
+    "no_correction": 529,
+    "boundary_align": 41,
+    "tail_cleanup": 20
+  },
+  "mean_route_confidence": 1.0,
+  "no_correction_identity_max_abs_logit_diff": 0.0,
+  "note": "Forced oracle routing is diagnostic only; official test always uses learned routing."
+}

@@ -1,0 +1,6 @@
+accuracy,balanced_accuracy,macro_f1,no_correction_precision,no_correction_recall,no_correction_f1,labels,feature_set,model,n_features,features
+1.0,1.0,1.0,0.0,0.0,0.0,"['remove_fp', 'tail_cleanup']",scalar_quality,forest,1,scalar_quality
+1.0,1.0,1.0,0.0,0.0,0.0,"['remove_fp', 'tail_cleanup']",metric_discordance,forest,8,dice;bf1;hd95_err;assd_err;surface_tail_gap;overlap_boundary_gap;overlap_surface_gap;boundary_surface_gap
+1.0,1.0,1.0,0.0,0.0,0.0,"['remove_fp', 'tail_cleanup']",metric_values,forest,4,dice;bf1;hd95_err;assd_err
+1.0,1.0,1.0,0.0,0.0,0.0,"['remove_fp', 'tail_cleanup']",metric_discordance_plus_fpfn,forest,14,dice;bf1;hd95_err;assd_err;surface_tail_gap;overlap_boundary_gap;overlap_surface_gap;boundary_surface_gap;fp_ratio_gt;fn_ratio_gt;fp_fraction_pred;fn_fraction_gt;precision_err;recall_err
+0.5,0.5,0.4999110953058321,0.0,0.0,0.0,"['remove_fp', 'tail_cleanup']",fpfn,forest,6,fp_ratio_gt;fn_ratio_gt;fp_fraction_pred;fn_fraction_gt;precision_err;recall_err

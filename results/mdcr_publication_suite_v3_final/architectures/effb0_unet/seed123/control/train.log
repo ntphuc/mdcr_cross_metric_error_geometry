@@ -1,0 +1,21 @@
+2026-10-02 16:42:56 | INFO | Logging to outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed123/control/train.log
+2026-10-02 16:42:59 | INFO | control epoch0 source val_dice=0.879373 included in validation checkpoint selection
+2026-10-02 16:43:24 | INFO | epoch=1/18 train_loss=0.05909 train_dice=0.89833 val_loss=0.07142 val_dice=0.87700 val_iou=0.80567 sec=25.6
+2026-10-02 16:43:49 | INFO | epoch=2/18 train_loss=0.05912 train_dice=0.89838 val_loss=0.07197 val_dice=0.87557 val_iou=0.80306 sec=24.9
+2026-10-02 16:44:17 | INFO | epoch=3/18 train_loss=0.05731 train_dice=0.90144 val_loss=0.07151 val_dice=0.87663 val_iou=0.80444 sec=27.3
+2026-10-02 16:44:42 | INFO | epoch=4/18 train_loss=0.05756 train_dice=0.90082 val_loss=0.07004 val_dice=0.87899 val_iou=0.80726 sec=25.3
+2026-10-02 16:45:07 | INFO | epoch=5/18 train_loss=0.05680 train_dice=0.90205 val_loss=0.07020 val_dice=0.87898 val_iou=0.80767 sec=24.5
+2026-10-02 16:45:32 | INFO | epoch=6/18 train_loss=0.05669 train_dice=0.90220 val_loss=0.07131 val_dice=0.87674 val_iou=0.80512 sec=24.4
+2026-10-02 16:46:28 | INFO | epoch=7/18 train_loss=0.05747 train_dice=0.90073 val_loss=0.07152 val_dice=0.87686 val_iou=0.80570 sec=55.5
+2026-10-02 16:46:54 | INFO | epoch=8/18 train_loss=0.05528 train_dice=0.90475 val_loss=0.07081 val_dice=0.87780 val_iou=0.80658 sec=25.8
+2026-10-02 16:47:19 | INFO | epoch=9/18 train_loss=0.05429 train_dice=0.90642 val_loss=0.07106 val_dice=0.87698 val_iou=0.80539 sec=24.7
+2026-10-02 16:47:44 | INFO | epoch=10/18 train_loss=0.05403 train_dice=0.90694 val_loss=0.07111 val_dice=0.87708 val_iou=0.80552 sec=25.0
+2026-10-02 16:48:09 | INFO | epoch=11/18 train_loss=0.05461 train_dice=0.90570 val_loss=0.07104 val_dice=0.87721 val_iou=0.80642 sec=24.6
+2026-10-02 16:48:35 | INFO | epoch=12/18 train_loss=0.05412 train_dice=0.90675 val_loss=0.07071 val_dice=0.87795 val_iou=0.80705 sec=24.7
+2026-10-02 16:48:59 | INFO | epoch=13/18 train_loss=0.05322 train_dice=0.90824 val_loss=0.07120 val_dice=0.87666 val_iou=0.80600 sec=24.7
+2026-10-02 16:49:25 | INFO | epoch=14/18 train_loss=0.05260 train_dice=0.90954 val_loss=0.07050 val_dice=0.87799 val_iou=0.80711 sec=24.9
+2026-10-02 16:49:50 | INFO | epoch=15/18 train_loss=0.05277 train_dice=0.90907 val_loss=0.07085 val_dice=0.87742 val_iou=0.80663 sec=24.9
+2026-10-02 16:50:15 | INFO | epoch=16/18 train_loss=0.05211 train_dice=0.91016 val_loss=0.07080 val_dice=0.87730 val_iou=0.80672 sec=24.6
+2026-10-02 16:50:44 | INFO | epoch=17/18 train_loss=0.05255 train_dice=0.90929 val_loss=0.07116 val_dice=0.87673 val_iou=0.80638 sec=28.6
+2026-10-02 16:51:10 | INFO | epoch=18/18 train_loss=0.05211 train_dice=0.91011 val_loss=0.07038 val_dice=0.87838 val_iou=0.80756 sec=25.7
+2026-10-02 16:51:10 | INFO | CONTROL DONE final=outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed123/control/final.pt best_val_dice=0.879373

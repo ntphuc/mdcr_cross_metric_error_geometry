@@ -1,0 +1,64 @@
+experiment_name: mdcr_v3_final_round_brisc2025
+seed: 42
+amp: true
+router_amp: false
+expert_amp: false
+expert_geometry_fallback: true
+concise_epoch_logging: true
+threshold: 0.5
+bf1_tolerance: 2
+weight_decay: 0.0001
+grad_clip: 5.0
+segmentor_epochs: 18
+segmentor_lr: 8.0e-05
+batch_size: 8
+num_workers: 2
+persistent_workers: true
+prefetch_factor: 2
+router_epochs: 24
+router_batch_size: 16
+router_lr: 0.0003
+router_width: 32
+router_hidden: 96
+router_dropout: 0.15
+route_focal_gamma: 1.5
+route_label_smoothing: 0.01
+route_class_weight_power: 0.35
+route_class_weight_max: 3.0
+route_sampler_max_ratio: 24.0
+router_false_correction_penalty: 0.2
+hierarchy_loss_weights:
+  correction: 1.0
+  family: 1.0
+  remove: 0.9
+expert_epochs: 18
+expert_batch_size: 8
+expert_lr: 0.0003
+expert_width: 32
+expert_sampler_max_ratio: 1.0
+residual_scale: 2.0
+oracle_gain_weight: 0.5
+explicit_target_weight: 1.4
+explicit_preserve_weight: 0.35
+explicit_delta_weight: 0.15
+explicit_residual_delta: 1.5
+explicit_boundary_radius: 4
+explicit_tail_radius: 10
+base_weight: 0.3
+geometry_scale: 0.6
+anchor_scale: 0.35
+residual_penalty_scale: 0.5
+route_direction_weight: 0.08
+anchor_boundary_radius: 3
+geometry_warmup_epochs: 1
+geometry_ramp_epochs: 3
+selection_dice_margin: 0.001
+selection_max_extra_misses: 0
+selection_min_utility_gain: 1.0e-05
+selection_hd95_scale: 16.0
+selection_assd_scale: 4.0
+selection_weights:
+  dice: 1.0
+  bf1: 0.15
+  hd95: 0.05
+  assd: 0.03

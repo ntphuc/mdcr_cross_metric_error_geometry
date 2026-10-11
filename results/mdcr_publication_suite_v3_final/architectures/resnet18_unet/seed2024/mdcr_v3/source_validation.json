@@ -1,0 +1,36 @@
+{
+  "learned": {
+    "dice": 0.869947765845428,
+    "iou": 0.7970517919995748,
+    "bf1": 0.8477817324682467,
+    "hd95": 7.956990041287901,
+    "assd": 2.320299393193951,
+    "misses": 0,
+    "predicted_route_counts": {
+      "no_correction": 431,
+      "recover_fn": 5,
+      "remove_fp": 0,
+      "boundary_align": 82,
+      "tail_cleanup": 72
+    },
+    "no_correction_identity_max_abs_logit_diff": 0.0,
+    "utility": 1.044318883623372
+  },
+  "oracle": {
+    "dice": 0.869947765845428,
+    "iou": 0.7970517919995748,
+    "bf1": 0.8477817324682467,
+    "hd95": 7.956990041287901,
+    "assd": 2.320299393193951,
+    "misses": 0,
+    "predicted_route_counts": {
+      "no_correction": 200,
+      "recover_fn": 115,
+      "remove_fp": 158,
+      "boundary_align": 99,
+      "tail_cleanup": 18
+    },
+    "no_correction_identity_max_abs_logit_diff": 0.0,
+    "utility": 1.044318883623372
+  }
+}

@@ -1,0 +1,63 @@
+suite_name: mdcr_metric_discordance_final_round_v3
+split_seed: 42
+manifest: data/brisc2025_manifest.csv
+data_root: datasets/brisc2025
+output_root: outputs/mdcr_publication_suite_v3_final
+baseline_configs:
+  effb0_unet: configs/baseline.yaml
+  resnet18_unet: configs/baseline_resnet18.yaml
+mdcr_v3_config: configs/mdcr_v3.yaml
+
+primary_architecture: effb0_unet
+primary_seeds: [42, 123, 2024, 2026, 3407]
+replication_architecture: resnet18_unet
+replication_seeds: [42, 123, 2024]
+
+synthetic:
+  train_max_cases: 600
+  val_max_cases: 300
+  seed: 4201
+
+natural:
+  min_oracle_gain: 0.002
+  hd95_scale: 16.0
+  assd_scale: 4.0
+  mc_samples_main_seed: 8
+  mc_samples_other_seeds: 1
+
+route_feature_sets:
+  - dice_only
+  - fpfn
+  - uncertainty
+  - scalar_quality
+  - metric_values
+  - metric_discordance
+  - metric_discordance_plus_fpfn
+  - all_combined
+
+# Final round: deployment router is supervised directly by the independently-defined
+# correction oracle. Metric-discordance diagnosis remains a scientific comparison/teacher ablation.
+router_train_route_column: oracle_route
+router_val_route_column: oracle_route
+expert_train_route_column: oracle_route
+oracle_route_column: oracle_route
+
+# Seed-42 targeted ablations only; the main 5+3 seed suite stays focused.
+run_seed42_ablations: true
+expert_ablations:
+  no_explicit_target:
+    explicit_target_weight: 0.0
+    explicit_preserve_weight: 0.0
+    explicit_delta_weight: 0.0
+  no_direction_prior:
+    route_direction_weight: 0.0
+  weak_route_balance:
+    expert_sampler_max_ratio: 1.0
+
+# Diagnostic forced routing is validation-only. True oracle always uses the raw
+# best-oracle expert checkpoint selected before deployment fallback.
+forced_val_routes:
+  metric_teacher: route_metric_discordance_plus_fpfn
+  true_oracle: oracle_route
+
+evaluate_official_test: true

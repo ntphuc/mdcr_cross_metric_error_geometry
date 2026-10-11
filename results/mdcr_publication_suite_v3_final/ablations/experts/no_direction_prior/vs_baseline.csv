@@ -1,0 +1,6 @@
+comparison,metric,direction,n,improvement,ci95_low,ci95_high,wilcoxon_p,cohens_dz_favorable,wins,losses
+no_direction_prior vs baseline,dice,higher,590,0.0,0.0,0.0,1.0,0.0,0,0
+no_direction_prior vs baseline,iou,higher,590,0.0,0.0,0.0,1.0,0.0,0,0
+no_direction_prior vs baseline,bf1,higher,590,0.0,0.0,0.0,1.0,0.0,0,0
+no_direction_prior vs baseline,hd95,lower,590,0.0,0.0,0.0,1.0,0.0,0,0
+no_direction_prior vs baseline,assd,lower,590,0.0,0.0,0.0,1.0,0.0,0,0

@@ -1,0 +1,7 @@
+accuracy,balanced_accuracy,macro_f1,no_correction_precision,no_correction_recall,no_correction_f1,labels,feature_set,model,n_features,features
+1.0,1.0,1.0,1.0,1.0,1.0,"['no_correction', 'recover_fn', 'remove_fp', 'boundary_align', 'tail_cleanup']",metric_discordance_plus_fpfn,forest,14,dice;bf1;hd95_err;assd_err;surface_tail_gap;overlap_boundary_gap;overlap_surface_gap;boundary_surface_gap;fp_ratio_gt;fn_ratio_gt;fp_fraction_pred;fn_fraction_gt;precision_err;recall_err
+0.8476666666666667,0.8905555555555555,0.8771272002363493,1.0,1.0,1.0,"['no_correction', 'recover_fn', 'remove_fp', 'boundary_align', 'tail_cleanup']",metric_discordance,forest,8,dice;bf1;hd95_err;assd_err;surface_tail_gap;overlap_boundary_gap;overlap_surface_gap;boundary_surface_gap
+0.8466666666666667,0.8908888888888888,0.8766089054275159,1.0,1.0,1.0,"['no_correction', 'recover_fn', 'remove_fp', 'boundary_align', 'tail_cleanup']",metric_values,forest,4,dice;bf1;hd95_err;assd_err
+0.8416666666666667,0.8416666666666666,0.8396370733765892,1.0,1.0,1.0,"['no_correction', 'recover_fn', 'remove_fp', 'boundary_align', 'tail_cleanup']",fpfn,forest,6,fp_ratio_gt;fn_ratio_gt;fp_fraction_pred;fn_fraction_gt;precision_err;recall_err
+0.689,0.7577777777777778,0.7235082447840244,1.0,1.0,1.0,"['no_correction', 'recover_fn', 'remove_fp', 'boundary_align', 'tail_cleanup']",scalar_quality,forest,1,scalar_quality
+0.45966666666666667,0.534888888888889,0.5089544347118203,1.0,1.0,1.0,"['no_correction', 'recover_fn', 'remove_fp', 'boundary_align', 'tail_cleanup']",dice_only,forest,1,dice

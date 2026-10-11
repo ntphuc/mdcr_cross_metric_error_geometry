@@ -1,0 +1,17 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/resnet18_unet/seed2024/baseline/best.pt",
+  "split": "test",
+  "n_cases": 860,
+  "threshold": 0.5,
+  "bf1_tolerance_px": 2,
+  "dice_mean": 0.8698486814446554,
+  "dice_std": 0.17735454851252766,
+  "iou_mean": 0.8011949000438766,
+  "precision_mean": 0.8719682720296191,
+  "recall_mean": 0.8960868416128479,
+  "specificity_mean": 0.998124593193748,
+  "bf1_mean": 0.8486060792662184,
+  "hd95_mean_finite": 7.967006131994509,
+  "assd_mean_finite": 2.5203024994124714,
+  "missed_lesion_cases": 0
+}

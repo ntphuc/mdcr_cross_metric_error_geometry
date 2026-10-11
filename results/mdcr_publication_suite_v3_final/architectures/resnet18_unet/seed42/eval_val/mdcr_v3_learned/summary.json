@@ -1,0 +1,21 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/resnet18_unet/seed42/mdcr_v3/deployment.pt",
+  "split": "val",
+  "n_cases": 590,
+  "architecture": "resnet18_unet",
+  "routing_mode": "learned",
+  "force_route_column": null,
+  "dice_mean": 0.8700659330427164,
+  "iou_mean": 0.7962589621986909,
+  "bf1_mean": 0.8476789069950712,
+  "hd95_mean_finite": 8.072430694044556,
+  "assd_mean_finite": 2.195971165856399,
+  "missed_lesion_cases": 0,
+  "route_counts": {
+    "no_correction": 529,
+    "boundary_align": 61
+  },
+  "mean_route_confidence": 1.0,
+  "no_correction_identity_max_abs_logit_diff": 0.0,
+  "note": "Forced oracle routing is diagnostic only; official test always uses learned routing."
+}

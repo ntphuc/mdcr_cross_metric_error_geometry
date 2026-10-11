@@ -1,0 +1,32 @@
+{
+  "method": "MDCR-v3",
+  "source_validation": {
+    "dice": 0.8700659330427164,
+    "iou": 0.7962589621986909,
+    "bf1": 0.8476789069950712,
+    "hd95": 8.072430694044556,
+    "assd": 2.195971165856399,
+    "misses": 0,
+    "predicted_route_counts": {
+      "no_correction": 529,
+      "recover_fn": 0,
+      "remove_fp": 0,
+      "boundary_align": 61,
+      "tail_cleanup": 0
+    },
+    "no_correction_identity_max_abs_logit_diff": 0.0,
+    "utility": 1.044733262967444
+  },
+  "best_deployment_utility": 1.044733262967444,
+  "best_deployment_epoch": 0,
+  "safe_fallback_to_source": true,
+  "raw_best_learned_utility": 1.0436682065597929,
+  "raw_oracle_best_utility": 1.0548512531656091,
+  "raw_oracle_best_utility_epoch": 6,
+  "raw_oracle_best_dice": 0.875949526880849,
+  "raw_oracle_best_dice_epoch": 6,
+  "oracle_ceiling_excludes_epoch0": true,
+  "source_frozen": true,
+  "router_frozen": true,
+  "explicit_correction_targets": true
+}

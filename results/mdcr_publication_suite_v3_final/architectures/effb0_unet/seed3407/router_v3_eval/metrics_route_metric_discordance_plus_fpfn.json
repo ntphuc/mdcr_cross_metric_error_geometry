@@ -1,0 +1,56 @@
+{
+  "accuracy": 0.43389830508474575,
+  "balanced_accuracy": 0.30222543986661404,
+  "macro_f1": 0.23697557822378484,
+  "per_route_recall": {
+    "no_correction": 0.9812206572769953,
+    "recover_fn": 0.0,
+    "remove_fp": 0.0,
+    "boundary_align": 0.42990654205607476,
+    "tail_cleanup": 0.1
+  },
+  "per_route_f1": {
+    "no_correction": 0.599713055954089,
+    "recover_fn": 0.0,
+    "remove_fp": 0.0,
+    "boundary_align": 0.4423076923076923,
+    "tail_cleanup": 0.14285714285714285
+  },
+  "confusion": [
+    [
+      209,
+      1,
+      0,
+      3,
+      0
+    ],
+    [
+      85,
+      0,
+      0,
+      12,
+      1
+    ],
+    [
+      123,
+      0,
+      0,
+      39,
+      0
+    ],
+    [
+      59,
+      0,
+      0,
+      46,
+      2
+    ],
+    [
+      8,
+      0,
+      0,
+      1,
+      1
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "decision": "EXPERT_BOTTLENECK_OR_NO_METHOD_CEILING",
+  "utilities": {
+    "baseline": 1.044318883623372,
+    "control": 1.0523693494791506,
+    "learned": 1.044318883623372,
+    "oracle_raw": 1.0517566537415026
+  },
+  "oracle_raw_vs_control": {
+    "dice_gain": 6.476821888901085e-05,
+    "hd95_reduction_px": -0.10039112796801053,
+    "utility_gain": -0.0006126957376479947
+  },
+  "oracle_raw_vs_learned": {
+    "dice_gap": 0.004996341471012022,
+    "utility_gap": 0.007437770118130516
+  },
+  "interpretation": "Oracle raw checkpoint is selected only among trained expert epochs (epoch>=1), before safety fallback. It is a diagnostic upper bound, never an official-test method."
+}

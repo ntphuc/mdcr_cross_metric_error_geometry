@@ -1,0 +1,23 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed2026/mdcr_v3/deployment.pt",
+  "split": "test",
+  "n_cases": 860,
+  "architecture": "effb0_unet",
+  "routing_mode": "learned",
+  "force_route_column": null,
+  "dice_mean": 0.8726687017577356,
+  "iou_mean": 0.8044663749569093,
+  "bf1_mean": 0.8503773040190618,
+  "hd95_mean_finite": 7.051581935348365,
+  "assd_mean_finite": 2.3832856920260186,
+  "missed_lesion_cases": 1,
+  "route_counts": {
+    "no_correction": 704,
+    "boundary_align": 82,
+    "tail_cleanup": 58,
+    "recover_fn": 16
+  },
+  "mean_route_confidence": 1.0,
+  "no_correction_identity_max_abs_logit_diff": 0.0,
+  "note": "Forced oracle routing is diagnostic only; official test always uses learned routing."
+}

@@ -1,0 +1,6 @@
+comparison,metric,direction,n,improvement,ci95_low,ci95_high,wilcoxon_p,cohens_dz_favorable,wins,losses
+mdcr_v3 vs baseline,dice,higher,860,0.0,0.0,0.0,1.0,0.0,0,0
+mdcr_v3 vs baseline,iou,higher,860,0.0,0.0,0.0,1.0,0.0,0,0
+mdcr_v3 vs baseline,bf1,higher,860,0.0,0.0,0.0,1.0,0.0,0,0
+mdcr_v3 vs baseline,hd95,lower,859,0.0,0.0,0.0,1.0,0.0,0,0
+mdcr_v3 vs baseline,assd,lower,859,0.0,0.0,0.0,1.0,0.0,0,0

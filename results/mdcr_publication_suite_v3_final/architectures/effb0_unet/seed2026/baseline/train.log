@@ -1,0 +1,59 @@
+2026-10-02 19:41:05 | INFO | Logging to outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed2026/baseline/train.log
+2026-10-02 19:41:05 | INFO | ===== TRAIN START =====
+2026-10-02 19:41:05 | INFO | command=train.py --config configs/baseline.yaml --manifest data/brisc2025_manifest.csv --data-root <DATA_ROOT> --device cuda --seed 2026 --output-dir outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed2026/baseline
+2026-10-02 19:41:05 | INFO | cwd=.
+2026-10-02 19:41:05 | INFO | config={'experiment_name': 'unet_effb0_brisc2025', 'architecture': 'effb0_unet', 'image_size': 256, 'batch_size': 8, 'num_workers': 2, 'epochs': 30, 'lr': 0.0003, 'weight_decay': 0.0001, 'pretrained_encoder': True, 'imagenet_norm': True, 'amp': True, 'concise_epoch_logging': True, 'threshold': 0.5, 'bce_weight': 0.5, 'dice_weight': 0.5, 'patience': 8, 'min_delta': 0.0005, 'val_fraction': 0.15, 'seed': 42, 'failed_top_k': 30, 'failed_dice_threshold': 0.6, 'persistent_workers': True, 'prefetch_factor': 2, 'log_every_batches': 0}
+2026-10-02 19:41:05 | INFO | ===== RUNTIME ENVIRONMENT =====
+2026-10-02 19:41:05 | INFO | python=3.12.13 (main, May 15 2026, 12:29:12) [GCC 14.2.0]
+2026-10-02 19:41:05 | INFO | platform=Linux-6.8.0-106-generic-x86_64-with-glibc2.39
+2026-10-02 19:41:05 | INFO | torch=2.7.1+cu128
+2026-10-02 19:41:05 | INFO | requested/resolved device=cuda
+2026-10-02 19:41:05 | INFO | torch.cuda.is_available=True
+2026-10-02 19:41:05 | INFO | CUDA_VISIBLE_DEVICES=MIG-<id>
+2026-10-02 19:41:05 | INFO | SLURM_JOB_ID=1643
+2026-10-02 19:41:05 | INFO | SLURM_JOB_NAME=mdcr_v3_final
+2026-10-02 19:41:05 | INFO | SLURM_CPUS_PER_TASK=4
+2026-10-02 19:41:05 | INFO | SLURM_MEM_PER_NODE=4096
+2026-10-02 19:41:05 | INFO | cuda_device_count=1
+2026-10-02 19:41:05 | INFO | cuda[0]=NVIDIA H200 MIG 2g.35gb capability=9.0 total_memory=32.5GB
+2026-10-02 19:41:05 | INFO | current_cuda_device=0
+2026-10-02 19:41:05 | INFO | gpu_mem_alloc=0MB reserved=0MB peak=0MB free=33097MB total=33280MB
+2026-10-02 19:41:05 | INFO | ===============================
+2026-10-02 19:41:05 | INFO | dataset backend train=npy val=npy | train_samples=3343 val_samples=590 | batch_size=8 | train_batches=418 val_batches=74
+2026-10-02 19:41:05 | INFO | loader num_workers=2 pin_memory=True persistent_workers=True prefetch_factor=2
+2026-10-02 19:41:05 | INFO | dataset preflight OK | image_shape=(3, 256, 256) mask_shape=(1, 256, 256) image_dtype=torch.float32 mask_dtype=torch.float32 case_id=brisc_npy_train_00000 lesion_pixels=4086.0
+2026-10-02 19:41:05 | INFO | model initialized | params=5703413 trainable=5703413 | gpu_mem_alloc=22MB reserved=34MB peak=22MB free=33063MB total=33280MB
+2026-10-02 19:41:31 | INFO | epoch=001/030 train_loss=0.6295 train_dice=0.6176 train_iou=0.4966 val_loss=0.5266 val_dice=0.7394 val_iou=0.6195 sec=25.7 status=best
+2026-10-02 19:41:55 | INFO | epoch=002/030 train_loss=0.4355 train_dice=0.7500 train_iou=0.6434 val_loss=0.3153 val_dice=0.7951 val_iou=0.6932 sec=23.8 status=best
+2026-10-02 19:42:19 | INFO | epoch=003/030 train_loss=0.2321 train_dice=0.8047 train_iou=0.7142 val_loss=0.1554 val_dice=0.8325 val_iou=0.7458 sec=23.2 status=best
+2026-10-02 19:42:42 | INFO | epoch=004/030 train_loss=0.1269 train_dice=0.8369 train_iou=0.7551 val_loss=0.1076 val_dice=0.8434 val_iou=0.7606 sec=22.7 status=best
+2026-10-02 19:43:05 | INFO | epoch=005/030 train_loss=0.1068 train_dice=0.8389 train_iou=0.7582 val_loss=0.0963 val_dice=0.8476 val_iou=0.7656 sec=23.2 status=best
+2026-10-02 19:43:29 | INFO | epoch=006/030 train_loss=0.0923 train_dice=0.8530 train_iou=0.7743 val_loss=0.0903 val_dice=0.8519 val_iou=0.7714 sec=23.3 status=best
+2026-10-02 19:43:53 | INFO | epoch=007/030 train_loss=0.0863 train_dice=0.8586 train_iou=0.7823 val_loss=0.0879 val_dice=0.8532 val_iou=0.7741 sec=23.8 status=best
+2026-10-02 19:44:17 | INFO | epoch=008/030 train_loss=0.0837 train_dice=0.8607 train_iou=0.7847 val_loss=0.0859 val_dice=0.8538 val_iou=0.7777 sec=23.5 status=best
+2026-10-02 19:44:41 | INFO | epoch=009/030 train_loss=0.0795 train_dice=0.8670 train_iou=0.7927 val_loss=0.0838 val_dice=0.8563 val_iou=0.7788 sec=23.6 status=best
+2026-10-02 19:45:04 | INFO | epoch=010/030 train_loss=0.0811 train_dice=0.8637 train_iou=0.7887 val_loss=0.0806 val_dice=0.8630 val_iou=0.7861 sec=23.4 status=best
+2026-10-02 19:45:28 | INFO | epoch=011/030 train_loss=0.0757 train_dice=0.8720 train_iou=0.7986 val_loss=0.0827 val_dice=0.8591 val_iou=0.7804 sec=23.4 status=bad=1
+2026-10-02 19:45:51 | INFO | epoch=012/030 train_loss=0.0741 train_dice=0.8741 train_iou=0.8002 val_loss=0.0797 val_dice=0.8636 val_iou=0.7868 sec=23.0 status=best
+2026-10-02 19:46:14 | INFO | epoch=013/030 train_loss=0.0724 train_dice=0.8768 train_iou=0.8050 val_loss=0.0801 val_dice=0.8614 val_iou=0.7860 sec=22.7 status=bad=1
+2026-10-02 19:46:37 | INFO | epoch=014/030 train_loss=0.0702 train_dice=0.8802 train_iou=0.8089 val_loss=0.0770 val_dice=0.8681 val_iou=0.7909 sec=23.2 status=best
+2026-10-02 19:47:01 | INFO | epoch=015/030 train_loss=0.0696 train_dice=0.8813 train_iou=0.8107 val_loss=0.0770 val_dice=0.8672 val_iou=0.7913 sec=23.3 status=bad=1
+2026-10-02 19:47:24 | INFO | epoch=016/030 train_loss=0.0673 train_dice=0.8852 train_iou=0.8147 val_loss=0.0753 val_dice=0.8707 val_iou=0.7939 sec=23.5 status=best
+2026-10-02 19:47:47 | INFO | epoch=017/030 train_loss=0.0662 train_dice=0.8865 train_iou=0.8165 val_loss=0.0761 val_dice=0.8686 val_iou=0.7932 sec=23.1 status=bad=1
+2026-10-02 19:48:11 | INFO | epoch=018/030 train_loss=0.0650 train_dice=0.8883 train_iou=0.8196 val_loss=0.0757 val_dice=0.8701 val_iou=0.7942 sec=23.7 status=bad=2
+2026-10-02 19:48:35 | INFO | epoch=019/030 train_loss=0.0642 train_dice=0.8899 train_iou=0.8213 val_loss=0.0761 val_dice=0.8680 val_iou=0.7942 sec=23.7 status=bad=3
+2026-10-02 19:49:13 | INFO | epoch=020/030 train_loss=0.0628 train_dice=0.8920 train_iou=0.8242 val_loss=0.0746 val_dice=0.8714 val_iou=0.7968 sec=37.2 status=best
+2026-10-02 19:49:36 | INFO | epoch=021/030 train_loss=0.0622 train_dice=0.8932 train_iou=0.8258 val_loss=0.0737 val_dice=0.8729 val_iou=0.7986 sec=23.2 status=best
+2026-10-02 19:49:59 | INFO | epoch=022/030 train_loss=0.0611 train_dice=0.8951 train_iou=0.8279 val_loss=0.0769 val_dice=0.8667 val_iou=0.7936 sec=23.1 status=bad=1
+2026-10-02 19:50:27 | INFO | epoch=023/030 train_loss=0.0598 train_dice=0.8973 train_iou=0.8304 val_loss=0.0746 val_dice=0.8704 val_iou=0.7974 sec=27.7 status=bad=2
+2026-10-02 19:50:50 | INFO | epoch=024/030 train_loss=0.0597 train_dice=0.8974 train_iou=0.8305 val_loss=0.0732 val_dice=0.8730 val_iou=0.7999 sec=23.0 status=bad=3
+2026-10-02 19:51:13 | INFO | epoch=025/030 train_loss=0.0586 train_dice=0.8992 train_iou=0.8332 val_loss=0.0734 val_dice=0.8726 val_iou=0.7996 sec=23.0 status=bad=4
+2026-10-02 19:51:36 | INFO | epoch=026/030 train_loss=0.0582 train_dice=0.9000 train_iou=0.8344 val_loss=0.0730 val_dice=0.8732 val_iou=0.8004 sec=23.5 status=bad=5
+2026-10-02 19:52:21 | INFO | epoch=027/030 train_loss=0.0593 train_dice=0.8980 train_iou=0.8325 val_loss=0.0723 val_dice=0.8746 val_iou=0.8015 sec=44.2 status=best
+2026-10-02 19:52:45 | INFO | epoch=028/030 train_loss=0.0577 train_dice=0.9008 train_iou=0.8354 val_loss=0.0720 val_dice=0.8751 val_iou=0.8024 sec=23.7 status=best
+2026-10-02 19:53:09 | INFO | epoch=029/030 train_loss=0.0572 train_dice=0.9018 train_iou=0.8365 val_loss=0.0719 val_dice=0.8752 val_iou=0.8025 sec=23.5 status=bad=1
+2026-10-02 19:53:32 | INFO | epoch=030/030 train_loss=0.0583 train_dice=0.8996 train_iou=0.8340 val_loss=0.0723 val_dice=0.8746 val_iou=0.8018 sec=23.5 status=bad=2
+2026-10-02 19:53:32 | INFO | ===== TRAIN FINISHED =====
+2026-10-02 19:53:32 | INFO | Best val Dice: 0.8751
+2026-10-02 19:53:32 | INFO | Checkpoint: outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed2026/baseline/best.pt
+2026-10-02 19:53:32 | INFO | History: outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed2026/baseline/history.csv

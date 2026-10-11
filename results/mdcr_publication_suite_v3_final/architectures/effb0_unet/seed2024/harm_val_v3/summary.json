@@ -1,0 +1,16 @@
+{
+  "split": "val",
+  "n_cases": 590,
+  "mean_correction_rate": 0.0,
+  "mean_harm_rate": 0.0,
+  "total_corrected_pixels": 0,
+  "total_harmed_pixels": 0,
+  "net_corrected_pixels": 0,
+  "cases_dice_improved": 0,
+  "cases_dice_harmed": 0,
+  "no_correction_cases": 486,
+  "no_correction_total_harmed_pixels": 0,
+  "no_correction_identity_max_abs_logit_diff": 0.0,
+  "preservation_contract_pass": true,
+  "interpretation": "In v3, route no_correction is exact identity because the source segmentor is permanently frozen."
+}

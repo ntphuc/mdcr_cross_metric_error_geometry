@@ -1,0 +1,16 @@
+{
+  "train_csv": "outputs/mdcr_publication_suite_v3_final/synthetic/train.csv",
+  "test_csv": "outputs/mdcr_publication_suite_v3_final/synthetic/val.csv",
+  "label": "target_route",
+  "model": "forest",
+  "seed": 4242,
+  "feature_sets": [
+    "dice_only",
+    "fpfn",
+    "scalar_quality",
+    "metric_values",
+    "metric_discordance",
+    "metric_discordance_plus_fpfn"
+  ],
+  "interpretation": "Higher macro-F1 means the signal better predicts which correction family the oracle says is useful, including no correction."
+}

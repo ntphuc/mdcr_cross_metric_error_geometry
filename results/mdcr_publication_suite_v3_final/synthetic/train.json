@@ -1,0 +1,13 @@
+{
+  "split": "train",
+  "n_source_cases": 600,
+  "n_rows": 6000,
+  "classes": {
+    "recover_fn": 1800,
+    "remove_fp": 1200,
+    "boundary_align": 1200,
+    "tail_cleanup": 1200,
+    "no_correction": 600
+  },
+  "purpose": "controlled error-geometry benchmark; no model predictions are used"
+}

@@ -1,0 +1,17 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/effb0_unet/seed2026/control/best_dice.pt",
+  "split": "val",
+  "n_cases": 590,
+  "threshold": 0.5,
+  "bf1_tolerance_px": 2,
+  "dice_mean": 0.8799193491787345,
+  "dice_std": 0.14828214996629085,
+  "iou_mean": 0.8086227846328881,
+  "precision_mean": 0.8948572787045733,
+  "recall_mean": 0.8936553724578794,
+  "specificity_mean": 0.9983899017069253,
+  "bf1_mean": 0.8574978935402275,
+  "hd95_mean_finite": 6.696873168463613,
+  "assd_mean_finite": 1.8161792973216198,
+  "missed_lesion_cases": 1
+}

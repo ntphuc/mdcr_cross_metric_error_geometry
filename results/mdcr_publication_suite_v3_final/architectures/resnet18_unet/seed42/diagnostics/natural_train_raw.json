@@ -1,0 +1,17 @@
+{
+  "checkpoint": "outputs/mdcr_publication_suite_v3_final/architectures/resnet18_unet/seed42/baseline/best.pt",
+  "split": "train",
+  "n_cases": 3343,
+  "architecture": "resnet18_unet",
+  "mc_samples": 1,
+  "min_oracle_gain": 0.002,
+  "route_counts": {
+    "no_correction": 1300,
+    "remove_fp": 839,
+    "boundary_align": 661,
+    "recover_fn": 481,
+    "tail_cleanup": 62
+  },
+  "mean_oracle_gain": 0.034393308795151324,
+  "role": "Ground truth is used only for diagnostic analysis and training-route labels, never at deployment."
+}
